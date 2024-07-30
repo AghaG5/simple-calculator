@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import { input, number, select } from "@inquirer/prompts";
 async function calculator() {
   console.log(

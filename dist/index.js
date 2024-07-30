@@ -1,13 +1,12 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const prompts_1 = require("@inquirer/prompts");
+#! /usr/bin/env node
+import { number, select } from "@inquirer/prompts";
 async function calculator() {
     console.log("Thank you for using this,This is a simple calculator so only two values of infinite digits can be either add  subtract or multiply divide with eachother. ");
-    const num1 = await (0, prompts_1.number)({
+    const num1 = await number({
         message: "Enter you first number",
         required: true,
     });
-    const num2 = await (0, prompts_1.number)({
+    const num2 = await number({
         message: "Enter your second number",
         required: true,
     });
@@ -15,7 +14,7 @@ async function calculator() {
         console.error("Both numbers are required");
         return;
     }
-    const option = await (0, prompts_1.select)({
+    const option = await select({
         message: "Below are the operators, Select one to perform an action.",
         choices: [
             {
