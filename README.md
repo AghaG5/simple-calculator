@@ -1,2 +1,1 @@
-"# calculator" 
-"# simple-calculator" 
+run npx command j-b-simple_calculator_
