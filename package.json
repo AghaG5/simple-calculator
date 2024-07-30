@@ -1,9 +1,9 @@
 {
-  "name": "a-m-simple_calculator_",
+  "name": "j-b-simple_calculator_",
   "version": "1.0.0",
   "main": "index.js",
   "type":"module",
-  "bin":"index.js",
+  "bin":"./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
